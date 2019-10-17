@@ -137,7 +137,17 @@ console.log();
 
 for (let i = 0; i < inventory.length; i++) {
   if (inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi') {
-      BMWAndAudi.push(inventory[i]);
+      BMWAndAudi.push(inventory[i]);//BMWAndAudi.push(`${JSON.stringify(inventory[i])}');
   }
 }
 console.log(JSON.stringify(BMWAndAudi));
+//inventory.filter(car=> {
+  // if (carYears.car_make === 'BMW' || carYears.car_make ==='Audi')
+  // return JSON.stringify(car);
+  // });
+
+  // let filteredCars = inventory.filter(car => {
+  //   if (car.car_make === 'Audi' || car.car_make === 'BMW'){
+  //     return `${JSON.stringify(car)}`;
+  //   }
+  // });
